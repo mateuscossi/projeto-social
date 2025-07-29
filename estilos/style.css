@@ -21,7 +21,14 @@ main {
 
 section#telefone {
     position: absolute;
+    top: 50%;
+    left: 50%; /*Se você deixa ele só com o top e o left em 50% o que vai ficar no meio é a ponta do quadrado e não o quadrado, e como resolver isso? olha pra baixo*/
+    transform: translate(-50%, -50%);
+    /*Esse negocio faz o ponto central do quadrado não ser a ponta dele e sim o meio dele de verdade.*/
+
     height: 500px;
     width: 500px;
-    background-color: bisque;
+    background-color: #00eeff;
+
+    background: url('../imagens/frame-iphone.png');
 }
